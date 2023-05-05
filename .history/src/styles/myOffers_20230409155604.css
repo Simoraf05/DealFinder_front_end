@@ -1,0 +1,56 @@
+#buyer_info_name {
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#buyer_info_name ::before{
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #000 #000 #000;
+}
+#tooltip:hover #buyer_info_name {
+    visibility: visible;
+    top: -150%;
+    opacity: 1;
+}
+#buyer_info_email {
+    position: absolute;
+    left: 65px;
+    top: -10;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#buyer_info_email ::before{
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #000 #000 #000;
+}
+#tooltip:hover #buyer_info_email {
+    visibility: visible;
+    top: -150%;
+    opacity: 1;
+}

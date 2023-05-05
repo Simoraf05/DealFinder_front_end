@@ -1,0 +1,16 @@
+import React from 'react'
+import Navbar from '../components/Navbar'
+import '../styles/checkO.css'
+
+const CheckOut = () => {
+  return (
+    <div>
+        <Navbar></Navbar>
+        <div>
+        
+        </div>
+    </div>
+  )
+}
+
+export default CheckOut

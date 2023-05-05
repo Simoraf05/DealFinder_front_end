@@ -1,0 +1,9 @@
+.profil__{
+    overflow-x: hidden;
+}
+.card{
+    border-radius: 15px;
+}
+.nav ul:hover{
+    background-color: indianred;
+}

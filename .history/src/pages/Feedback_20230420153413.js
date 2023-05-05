@@ -1,0 +1,49 @@
+import React from 'react'
+import '../styles/feedback.css'
+import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
+
+const Feedback = () => {
+  return (
+    <div>
+        <Navbar></Navbar>
+            <Link to='/' class="btn btn-info btn-lg openmodal">Go Home</Link>
+            <div  class="modal fade">
+
+            <div class="modal">
+
+                <div class="modal-content">
+
+                <div class="modal-header">
+                    <h3>Feedback Request</h3>
+
+                    <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <i class="far fa-file-alt fa-4x mb-3 animated rotateIn icon1"></i>
+                    <h3>Your opinion matters</h3>
+                    <h5>Help us improve our product? <strong>Give us your feedback.</strong></h5>
+                    <hr/>
+                    <h6>Your Rating</h6>
+                </div>
+
+                <span class="star-rating">
+                    <input type="radio" name="rating1" value="1"/><i></i>
+                    <input type="radio" name="rating1" value="2"/><i></i>
+                    <input type="radio" name="rating1" value="3"/><i></i>
+                    <input type="radio" name="rating1" value="4"/><i></i>
+                    <input type="radio" name="rating1" value="5"/><i></i>
+                </span>
+
+
+                </div>
+
+            </div>
+
+            </div>
+    </div>
+  )
+}
+
+export default Feedback

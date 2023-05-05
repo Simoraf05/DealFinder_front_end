@@ -1,0 +1,4 @@
+#buyer_info_name ,#buyer_info_email{
+    position: absolute;
+    transform: translateX(-50%);
+}

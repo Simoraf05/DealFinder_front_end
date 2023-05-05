@@ -1,0 +1,5 @@
+#buyer_info_name ,#buyer_info_email{
+    position: absolute;
+    left: 50px;
+    transform: translateX(-50%);
+}

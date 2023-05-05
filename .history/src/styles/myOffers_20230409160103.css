@@ -1,0 +1,43 @@
+#buyer_info_name ::before{
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #000 #000 #000;
+}
+#tooltip:hover #buyer_info_name {
+    visibility: visible;
+    top: -150%;
+    opacity: 1;
+}
+#buyer_info{
+    position: absolute;
+    left: 65px;
+    top: 100px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#buyer_info{
+    visibility: visible;
+    top: -150%;
+    opacity: 1;
+}
+#buyer_info::before{
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #000 #000 #000;
+}

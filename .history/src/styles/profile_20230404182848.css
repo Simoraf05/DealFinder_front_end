@@ -1,0 +1,10 @@
+.profil__{
+    overflow: hidden;
+}
+.card{
+    border-radius: 15px;
+}
+.dropdown{
+    position: relative;
+    bottom: 100px;
+}

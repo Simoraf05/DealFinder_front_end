@@ -1,0 +1,9 @@
+#buyer_info_name ,#buyer_info_email{
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    wi
+}

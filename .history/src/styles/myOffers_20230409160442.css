@@ -1,0 +1,16 @@
+#tooltip:hover #buyer_info {
+    visibility: visible;
+    top: -150%;
+    opacity: 1;
+}
+
+
+#tooltip::before{
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: 15px;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #000 #000 #000;
+}

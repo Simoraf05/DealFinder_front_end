@@ -1,0 +1,24 @@
+#tooltip_product:hover #seller_info {
+    visibility: visible;
+    top: -20%;
+    opacity: 1;
+}
+#seller_info{
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    transform: translateX(-50%);
+    background-color: #455a64;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#product_image{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}

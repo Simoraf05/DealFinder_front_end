@@ -1,0 +1,76 @@
+header{
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	box-shadow: 2px 5px 15px 2px rgb(0 0 0 / 10%);
+	position: fixed;
+	left: 22%;
+	width: calc(100% - 22%);
+	top: 0;
+	z-index: 100;
+	transition: left 300ms;
+    a
+}
+.accueil{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	margin-left: 15px;
+	color: #008ea1;
+}
+.search-wrapp{
+	border: 1px solid #008ea1;
+	border-radius: 20px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+}
+.search-wrapp input{
+	height: 100%;
+	padding: .5rem;
+	border: none;
+	outline: none;
+}
+.search-wrapp span{
+	display: inline-block;
+	padding: 0rem 1rem;
+	font-size: 1.5rem;
+	color: #008ea1;
+}
+.user-wrapp{
+	display: flex;
+	align-items: center;
+}
+.user-wrapp img{
+	border-radius: 50%;
+	margin-right: 5rem;
+}
+.user-wrapp small{
+	color: #ccc;
+	display: inline-block;
+}
+.logo-admin{
+	cursor: pointer;
+}
+#dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	height: 80px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5px;
+	z-index: 1;
+}
+#dropdown:hover .dropdown-content{
+	display: block;
+	cursor: pointer;
+}
+.dropdown-content p{
+	padding: .5rem;
+}

@@ -1,0 +1,11 @@
+.profil__{
+    overflow-x: hidden;
+}
+.card{
+    border-radius: 15px;
+}
+.nav li a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.
