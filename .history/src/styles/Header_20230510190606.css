@@ -1,0 +1,24 @@
+#header__{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar__{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar__ li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar__ li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+
+}
