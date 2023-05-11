@@ -1,0 +1,14 @@
+.text-danger{
+    border: none;
+    background-color: transparent;
+}
+#cart__ table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart__ table img{
+    width: 70px;
+}
+#cart__ table td:nth-child(1)

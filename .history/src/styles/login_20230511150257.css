@@ -1,0 +1,12 @@
+#login__{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+#login__ img{
+    width: 50%;
+    height: auto;
+}

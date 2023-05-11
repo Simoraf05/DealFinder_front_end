@@ -1,0 +1,20 @@
+#productdetail__{
+    display: flex;
+    margin-top: 20px;
+}
+#productdetail__ .single__pro__image{
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 70px;
+}
+
+#productdetail__ .single__pro__details{
+    padding-top: 10px;
+}
+
+#comments__{
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
+}

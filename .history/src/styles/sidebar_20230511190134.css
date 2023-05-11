@@ -1,0 +1,11 @@
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+}
+#sidebar .image__text img{
+    width: 40px;
+    border-radius: 6px;
+}

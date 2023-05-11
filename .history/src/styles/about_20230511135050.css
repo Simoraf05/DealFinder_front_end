@@ -1,0 +1,26 @@
+#banner__ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../../public/images/about/banner.png');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#banner__ h4 {
+    color: #ef3636;
+    font-size: 5em;
+}
+
+#banner__ h2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    font-size: 2em;
+}
+#

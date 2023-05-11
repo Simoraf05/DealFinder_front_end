@@ -1,0 +1,53 @@
+#banner__ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../../public/images/about/banner.png');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#banner__ h4 {
+    color: #ef3636;
+    font-size: 5em;
+}
+
+#banner__ h2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    font-size: 2em;
+}
+#about__us{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+#about__us img{
+    width: 50%;
+    height: auto;
+}
+#about__us h2{
+    font-size: 5em;
+}
+#about__us p{
+    font-size: 1.5em;
+    opacity: 70%;
+}
+#about__us abbr{
+    font-size: 1.5em;
+}
+#about__us marquee{
+    font-size: 1.5em;
+    margin-top: 20px;
+    width: 90%;
+}
+#about__us div{
+    margin-top: -100px;
+    padding-left: 40px;
+}

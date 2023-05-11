@@ -1,0 +1,38 @@
+.text-danger{
+    border: none;
+    background-color: transparent;
+}
+#cart__ table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart__ table img{
+    width: 70px;
+}
+#cart__ table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart__ table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart__ table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart__ table td:nth-child(4),
+#cart__ table td:nth-child(5){
+    width: 250px;
+    text-align: center;
+}
+#cart__ table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart__ table thead{
+    border: 1px solid #;
+}

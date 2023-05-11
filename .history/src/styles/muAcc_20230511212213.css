@@ -1,0 +1,62 @@
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+    position: fixed;
+}
+
+.profile-button {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+.labels {
+    font-size: 11px
+}
+
+.info__inputs input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+.info__inputs input:hover{
+    border: solid 1px #088178
+}
+.info__inputs input[type=text]::placeholder{
+    font-size: 1.5em;
+}
+.avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-edit input {
+    display: none;
+}
+.avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    background-image: url('../../public/icones/upload-2-fill.png');
+    background-size: 100%;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }

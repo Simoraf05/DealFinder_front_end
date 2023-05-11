@@ -1,0 +1,31 @@
+#login__{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+#login__ img{
+    width: 50%;
+    height: auto;
+}
+#login__ h2{
+    font-size: 5em;
+}
+#login__ p{
+    font-size: 1.5em;
+    opacity: 70%;
+}
+#login__ abbr{
+    font-size: 1.5em;
+}
+#login__ marquee{
+    font-size: 1.5em;
+    margin-top: 20px;
+    width: 90%;
+}
+#login__ div{
+    margin-top: -100px;
+    padding-left: 40px;
+}

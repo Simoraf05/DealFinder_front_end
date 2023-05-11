@@ -1,0 +1,31 @@
+#login__{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+#login__ img{
+    width: 50%;
+    height: auto;
+}
+#about__us h2{
+    font-size: 5em;
+}
+#about__us p{
+    font-size: 1.5em;
+    opacity: 70%;
+}
+#about__us abbr{
+    font-size: 1.5em;
+}
+#about__us marquee{
+    font-size: 1.5em;
+    margin-top: 20px;
+    width: 90%;
+}
+#about__us div{
+    margin-top: -100px;
+    padding-left: 40px;
+}

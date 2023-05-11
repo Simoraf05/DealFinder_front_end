@@ -1,0 +1,29 @@
+
+
+#productdetail__ .single__pro__image{
+    width: 40%;
+    margin-right: 50px;
+    margin-left: 70px;
+}
+#productdetail__{
+    display: flex;
+    margin-top: 20px;
+}
+#productdetail__ .single__pro__details{
+    width: 50px;
+    padding-top: 30px;
+}
+#productdetail__ .single__pro__details h4{
+    padding: 20px 0 20px 0;
+    font-size: 2em;
+
+}
+#productdetail__ .single__pro__details h2{
+    padding: 40px 0 20px 0;
+    font-size: 2em;
+}
+#productdetail__ .single__pro__details button{
+    background-color: #088178;
+    color: #fff;
+    border: none;
+}

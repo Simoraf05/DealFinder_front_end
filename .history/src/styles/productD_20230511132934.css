@@ -1,0 +1,53 @@
+#productdetail__{
+    display: flex;
+    margin-top: 20px;
+}
+#productdetail__ .single__pro__image{
+    width: 50%;
+    margin-right: 50px;
+    margin-left: 70px;
+}
+
+#productdetail__ .single__pro__details{
+    padding-top: 10px;
+}
+#productdetail__ .single__pro__details h4{
+    padding: 20px 0 20px 0;
+    font-size: 2em;
+}
+#productdetail__ .single__pro__details h6{
+    font-size: 1em;
+    font-weight: 700;
+}
+#productdetail__ .single__pro__details h2{
+    padding: 20px 0 20px 0;
+    font-size: 2em;
+}
+#productdetail__ .single__pro__details button{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+#productdetail__ .single__pro__details span{
+    line-height: 25px;
+    font-size: 1.5em;
+}
+#comments__{
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+#comments__ .headings__ h5{
+    font-size: 1.5em;
+}
+#comments__ .card .user__ span small{
+    font-size: 1.2em;
+}
