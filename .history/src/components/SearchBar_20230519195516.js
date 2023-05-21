@@ -1,0 +1,40 @@
+import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
+
+const SearchBar = ({ setSearchSection }) => {
+    const [search, setSearch] = useState('')
+    const [resSearch, setResSearch] = useState([])
+    const fetchData = (e) => {
+        e.preventDefault()
+        axios.post('http://127.0.0.1:8000/api/searchForProductByName', { title: search })
+            .then(res => {
+                setResSearch(res.data)
+                console.log(resSearch)
+            }).catch(err => {
+                console.log(err)
+            })
+    }
+
+    return (
+        <div>
+            <div class="search-box">
+                <button onClick={fetchData} class="btn-search"><i class="fas fa-search"></i></button>
+                <div>
+                    
+                </div>
+            </div>
+            <div className='result_section'>
+                {
+                    resSearch.map((item) => {
+                        <div className='result_items'>
+                            {item.title}
+                        </div>
+                    })
+                }
+            </div>
+        </div>
+    )
+}
+
+export default SearchBar

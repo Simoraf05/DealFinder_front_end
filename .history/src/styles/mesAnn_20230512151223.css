@@ -1,0 +1,18 @@
+.mesAnn__{
+    height: 30%;
+    position: relative;
+    left: 150px;
+}
+
+#table__ table tbody td .btn__edit{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: #cb2323;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}

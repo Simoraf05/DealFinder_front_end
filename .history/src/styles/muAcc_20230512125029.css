@@ -1,0 +1,101 @@
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8;
+    position: fixed;
+}
+
+.profile-button {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+.labels {
+    font-size: 11px
+}
+
+.info__inputs input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+.info__inputs input:hover{
+    border: solid 1px #088178
+}
+.info__inputs input[type=text]::placeholder{
+    font-size: 1.5em;
+}
+#avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+#avatar-edit input {
+    display: none;
+}
+#profile__picture .upload__section{
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    bottom: 210px;
+    border-bottom-left-radius: 999px;
+    border-bottom-right-radius: 999px;
+    background-color: #a8a3a965;
+}
+
+#avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+    margin-top: 160px;
+    margin-right: 255px;
+    border-radius: 100%;
+    background-image: url('../../public/icones/image-add-line.png');
+    background-size: 100%;
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    color: #088178;
+  }
+  #profile__picture span{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  #profile__picture + #profile__picture .upload__section{
+    display:block;
+  }
+.form__{
+    margin-left: 150px;
+}
+.profile__{
+    margin-left: 650px;
+    margin-top: -420px;
+}
+#profile__picture{
+    width: 150px;
+    height: 150px;
+    border: 5px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#profile__picture img{
+    width: 150%;
+    height: 150%;
+    margin-top: -10px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}

@@ -1,0 +1,85 @@
+#products__ {
+    text-align: center;
+    justify-items: flex-end;
+}
+
+#products__ .pro__container {
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#products__ .pro__ {
+    width: 23%;
+    min-height: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#products__ .pro__:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#products__ .pro__ img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+#products__ h2 {
+    font-size: 6em;
+}
+
+#products__ h3 {
+    font-size: 2em;
+}
+
+#products__ .pro__ .des__ {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#products__ .pro__ .des__ span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#products__ .ppro__ro .des__ h5 {
+    padding: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#products__ .pro__ .des__ i {
+    font-size: 12px;
+    color: rgb(255, 238, 3);
+}
+
+#products__ .pro__ .des__ h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#products__ .pro__ .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}

@@ -1,0 +1,179 @@
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { toast } from 'react-toastify';
+
+const EditProduct = () => {
+
+    const [title,setTitle] = useState('')
+    const [description,setDescription] = useState('')
+    const [price,setPrice] = useState(0.00)
+    const [shipping_options,setShipping_option] = useState('')
+    const [image, setImage] = useState(null);
+    const [category,setCategory] = useState('')
+    const [categories, setCategories] = useState([]);
+
+    const handelImage=(file)=>{
+        setImage(file[0])
+      }
+    useEffect(() => {
+      axios.get('http://127.0.0.1:8000/api/getCategories')
+        .then(response => {
+          setCategories(response.data.categories)
+
+        });
+    }, []);
+    const dataArray = Object.entries(categories)
+    const [myProducts,setMyProducts] = useState([])
+    const [currentUser,setCurrentUser] = useState([])
+  
+    useEffect(()=>{
+      (async ()=> await Load())()
+    },[currentUser])
+
+
+    useEffect(() => {
+      const user = JSON.parse(localStorage.getItem('user'));
+      setCurrentUser(user);
+    }, []);
+
+    
+  async function Load(){
+    axios.post('http://127.0.0.1:8000/api/getMyProducts', { seller_id: currentUser.id })
+    .then(response => {
+      setMyProducts(response.data.Myproducts)
+      console.log(myProducts)
+    })
+    .catch(error => {
+      console.log(error)
+    });
+  }
+  
+
+    const UpdateProduct= async(e)=>{
+        e.preventDefault();
+        const formData = new FormData();
+
+        if (title) {
+          formData.append('title',title);
+        }
+        
+        if (description) {
+          formData.append('description',description);
+        }
+        
+        if (price) {
+          formData.append('price',price);
+        }
+        
+        if (shipping_options) {
+          formData.append('shipping_options',shipping_options);
+        }
+        if (category) {
+            formData.append('category',category);
+        }
+        
+        if (image) {
+          formData.append('image',image);
+        }
+        try {
+          const response = await fetch(`http://127.0.0.1:8000/api/editeProduct/${myProducts[0].id}`, {
+            method: 'POST',
+            body: formData
+          });
+          const data = await response.json();
+          console.log(data)
+          toast.success(data.message, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          })
+        } catch (error) {
+          console.error(error);
+        }
+
+    }
+
+  return (
+        <div>
+            <form onSubmit={UpdateProduct}>
+            <div className='title__'>
+                <h1 class="text-dark mb-4">Edite Your product</h1>
+            </div>
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">title</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <input type="text"  class="form-control form-control-lg" onChange={e=>{setTitle(e.target.value)}} />
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">description</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <input type="text" onChange={e=>{setDescription(e.target.value)}} class="form-control form-control-lg" />
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">price</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <input type="number" onChange={e=>{setPrice(e.target.value)}} class="form-control form-control-lg" />
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">Product image</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <input class="form-control form-control-lg" onChange={(e) => handelImage(e.target.files)} id="formFileLg" type="file" />
+                    <div class="small text-muted mt-2">Upload your Product Image. Max filesize 2048 px</div>               
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">shipping_options</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <input type="text" onChange={e=>{setShipping_option(e.target.value)}} class="form-control form-control-lg" />
+                </div>
+            </div>
+
+            <div class="row align-items-center pt-4 pb-3">
+                <div class="col-md-9 ps-5">
+                    <h4 class="mb-0">Category</h4>
+                </div>
+                <div class="col-md-12 pe-5">
+                    <select onChange={e=>{setCategory(e.target.value)}} class="form-control selectpicker form-control-lg">
+                        <option selected disabled className='bg-light'>Select Category</option>
+                        <hr></hr>
+                        {
+                            dataArray.map(item=>(
+                                <option value={item[1]}>{item[1]}</option>
+                            ))
+                        }
+                    </select>
+        
+                </div>
+            </div>
+
+            <div class="px-5 py-4">
+                <button type="submit" class="btn btn-primary btn-lg">Update</button>
+            </div>
+            </form>
+        </div>
+  )
+}
+
+export default EditProduct

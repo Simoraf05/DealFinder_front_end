@@ -1,0 +1,11 @@
+#table__{
+    margin-left: 250px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+#table__ table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
